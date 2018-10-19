@@ -1,0 +1,46 @@
+.readItem{
+    display:flex;
+    .read_time{
+        width:1rem;
+        font-size:.24rem;
+        text-align:center;
+        p:nth-child(1){
+            position:relative;
+            font-weight:bold;
+            .circle{
+                position:absolute;
+                bottom:-.1rem;
+                right:-.1rem;
+                width:.2rem;
+                height:.2rem;
+                background:red;
+                border-radius: 50%;
+            }
+        }
+
+    }
+    .read_content_wrap{
+        width:6.2rem;
+        border-left:1px solid red;
+        padding-left:.1rem;
+        padding-right:.2rem;
+        .read_title{
+            padding-top:.1rem;
+            font-size:.32rem;
+            font-weight:bold;
+        }
+        .read_content{
+            padding:.1rem 0 .3rem;
+            font-size:.28rem;
+            text-align: justify;
+        }
+        >video{
+            width:100%;
+            height:auto;
+        }
+        >img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
