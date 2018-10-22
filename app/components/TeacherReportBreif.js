@@ -40,7 +40,7 @@ export default class TeacherReportBreif extends React.PureComponent{
     return (
         <div className="TeacherReportBreif">
           <p className="title">
-            <span><img src={teacher_img} />君银内参</span>
+            <span><img src={teacher_img} />上市公司大事件</span>
             <Link to={this.linkUrl}><img src={detail_img} alt=""/></Link>
           </p>
           <div>

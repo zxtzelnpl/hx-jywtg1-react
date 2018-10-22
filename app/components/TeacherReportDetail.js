@@ -36,7 +36,7 @@ export default class TeacherReportDetail extends React.PureComponent{
       let id = this.id
       let teacherItem = this.teacherItem[0]
       let {title, timestamp} = teacherItem
-      let type = '君银内参'
+      let type = '民众内参'
       let body = `openid=${openid}&Article_title=${title}&time=${moment.unix(timestamp).format('YYYY-MM-DD HH:mm')}&Article_type=${type}&Article_id=${id}`
       console.log(body)
       fetch(Article_browse_Record,{

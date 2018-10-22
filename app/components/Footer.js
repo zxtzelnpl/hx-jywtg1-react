@@ -137,10 +137,10 @@ class Footer extends React.PureComponent {
               <img src={footer_disk_png} alt=""/>
               <span style={{"color": footer_disk_color}}>解盘</span>
             </Link>
-            <Link to="/ProductGameMaster">
+            {/*<Link to="/ProductGameMaster">
               <img src={footer_product_png} alt=""/>
               <span style={{"color": footer_product_color}}>微投顾</span>
-            </Link>
+            </Link>*/}
             <Link to="/VideosPage">
               <img src={footer_user_png} alt=""/>
               <span style={{"color": footer_user_color}}>视频</span>

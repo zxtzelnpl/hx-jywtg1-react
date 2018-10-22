@@ -56,7 +56,7 @@ export default class VideoBrief extends React.PureComponent {
     return (
         <div className="VideoBrief">
           <p className="title">
-            <span><img src={title}/>君银直播</span>
+            <span><img src={title}/>民众直播</span>
             <Link to={{pathname:'/VideosPage',state:labels.PAN_MIAN_DIAN_JIN}}><img src={detail} alt=""/></Link>
           </p>
           <div className="wrap">

@@ -16,11 +16,11 @@ export default class NewsPage extends React.Component{
 
   onClick(e){
     let text = e.target.innerHTML
-    if(text==='机构资讯'){
+    if(text==='市场解析'){
       this.setState({
         show:'news'
       })
-    }else if(text==='君银内参'){
+    }else if(text==='上市公司大事件'){
       this.setState({
         show:'teacher'
       })
@@ -46,8 +46,8 @@ export default class NewsPage extends React.Component{
         <div className="NewsPage">
           <div className="tabHead">
             <ul onClick={this.onClick.bind(this)}>
-              <li className={show==='news'?'active':'normal'}>机构资讯</li>
-              <li className={show==='teacher'?'active':'normal'}>君银内参</li>
+              <li className={show==='news'?'active':'normal'}>市场解析</li>
+              <li className={show==='teacher'?'active':'normal'}>上市公司大事件</li>
             </ul>
           </div>
           <div className="tab_content">

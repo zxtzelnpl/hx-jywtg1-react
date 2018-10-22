@@ -32,7 +32,7 @@ export default class LiveVideos extends React.PureComponent{
     ,timestamp=video.getAttribute('data-video-timestamp')
     ,title=video.getAttribute('data-video-title');
 
-    let type='君银直播'
+    let type='短线内参'
     let sort=disk_diff(title)
     let body = `openid=${openid}&Video_title=${title}&time=${moment.unix(timestamp).format('YYYY-MM-DD HH:mm')}&Video_type=${type}&Video_sort=${sort}&Video_id=${id}`
     fetch(Video_browse_Record,{
@@ -66,7 +66,7 @@ export default class LiveVideos extends React.PureComponent{
       //   default:
       //     return false
       // }
-      return title.indexOf('盘面点金')>-1||title.indexOf('异动复盘')>-1||title.indexOf('优选早知道')>-1
+      return title.indexOf('短线金股')>-1||title.indexOf('金股内参')>-1||title.indexOf('绩效内参池')>-1
     });
 
     let htmlDom;
@@ -95,11 +95,11 @@ export default class LiveVideos extends React.PureComponent{
         <div className="Video" ref={wrap=>{this.wrap = wrap}}>
           <div className="nav">
             <ul onClick={onSubHeadToggle}>
-              <li className={tab===labels.JUN_YIN_ZHI_BO||tab===labels.PAN_MIAN_DIAN_JIN?'active':'normal'}>盘面点金</li>
+              <li className={tab===labels.JUN_YIN_ZHI_BO||tab===labels.PAN_MIAN_DIAN_JIN?'active':'normal'}>短线金股</li>
               <li className="line"/>
-              <li className={tab===labels.YI_DONG_FU_PAN?'active':'normal'}>异动复盘</li>
+              <li className={tab===labels.YI_DONG_FU_PAN?'active':'normal'}>金股内参</li>
               <li className="line"/>
-              <li className={tab===labels.YOU_XUAN_ZAO_ZHI_DAO?'active':'normal'}>优选早知道</li>
+              <li className={tab===labels.YOU_XUAN_ZAO_ZHI_DAO?'active':'normal'}>绩效内参池</li>
             </ul>
           </div>
           <div className="wrap">

@@ -56,7 +56,7 @@ function getInitialState() {
               if (json.erro !== 'OK') {
                 reject({
                   state: 'noAttention',
-                  message: '您还没有关注公众号《君银微投顾》，请先关注后查看页面'
+                  message: '您还没有关注公众号《民众微投顾》，请先关注后查看页面'
                 })
               }
               else {

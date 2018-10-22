@@ -21,7 +21,7 @@ export default class VideosPage extends React.PureComponent{
         tab:lables.JI_SHU_KE_CHENG
       })
     }
-    else if(text === '君银直播'){
+    else if(text === '短线内参'){
       this.setState({
         tab:lables.JUN_YIN_ZHI_BO
       })
@@ -30,16 +30,16 @@ export default class VideosPage extends React.PureComponent{
 
   onSubHeadToggle(e){
     let text = e.target.innerHTML
-    if(text === '盘面点金'){
+    if(text === '短线金股'){
       this.setState({
         tab:lables.PAN_MIAN_DIAN_JIN
       })
     }
-    else if(text === '异动复盘'){
+    else if(text === '金股内参'){
       this.setState({
         tab:lables.YI_DONG_FU_PAN
       })
-    }else if(text === '优选早知道'){
+    }else if(text === '绩效内参池'){
       this.setState({
         tab:lables.YOU_XUAN_ZAO_ZHI_DAO
       })

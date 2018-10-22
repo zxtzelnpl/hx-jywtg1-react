@@ -30,7 +30,7 @@ export default class DiskReadBrief extends React.PureComponent {
       ,timestamp=video.getAttribute('data-video-timestamp')
       ,title=video.getAttribute('data-video-title');
 
-    let type='君银直播'
+    let type='民众直播'
     let sort=disk_diff(title)
     let body = `openid=${openid}&Video_title=${title}&time=${moment.unix(timestamp).format('YYYY-MM-DD HH:mm')}&Video_type=${type}&Video_sort=${sort}&Video_id=${id}`
     fetch(Video_browse_Record,{

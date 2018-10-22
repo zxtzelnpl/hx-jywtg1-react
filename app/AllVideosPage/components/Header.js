@@ -19,7 +19,7 @@ class Header extends React.PureComponent{
             tab===labels.YI_DONG_FU_PAN||
             tab===labels.YOU_XUAN_ZAO_ZHI_DAO
           )
-            ?'active':'normal'}>君银直播</li>
+            ?'active':'normal'}>短线内参</li>
       </ul>
     )
   }

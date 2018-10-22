@@ -56,7 +56,7 @@ export default class NewsInformation extends React.PureComponent {
     return (
         <div className="newsInformationBreif">
           <p className="title">
-            <span><img src={news_img} />计划书</span>
+            <span><img src={news_img} />市场解析</span>
             <Link to="/NewsPage"><img src={detail_img} alt=""/></Link>
           </p>
           <div className="wrap">
