@@ -7,3 +7,4 @@ test/
 *.rar
 others/*.css
 others_sz/*.css
+package-lock.json
