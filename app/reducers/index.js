@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux'
+import duan_xian_nei_can from './duan_xian_nei_can'
 import disk from './disk'
 import news from './news'
 import teacher from './teacher'
@@ -15,5 +16,6 @@ export default combineReducers({
   button,
   record,
   exchangeGuide,
-  specialClass
+  specialClass,
+  duan_xian_nei_can,
 })

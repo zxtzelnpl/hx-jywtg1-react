@@ -1,20 +1,21 @@
-import React from 'react'
-import {Route, Redirect, Link} from 'react-router-dom'
-import DiskRead from './DiskRead'
-import NewsInformation from './containers/NewsInformation'
-import NewsInformationDetail from './containers/NewsInformationDetail'
-import TeacherReport from './containers/TeacherReport'
-import TeacherReportDetail from './containers/TeacherReportDetail'
-import User from './containers/User'
-import Login from './containers/Login'
-import Center from './containers/Center'
-import Main from './subpages/Main'
-import NewsPage from './subpages/NewsPage'
-import AllVideosPage from './AllVideosPage'
-import Footer from './containers/Footer'
-import ProductGameMaster from './containers/ProductGameMaster'
-import ProductGameMasterList from './containers/ProductGameMasterList'
-import SpecialClassList from './AllVideosPage/containers/SpecialClassList'
+import React from 'react';
+import {Route, Redirect, Link} from 'react-router-dom';
+import DiskRead from './DiskRead';
+import NewsInformation from './containers/NewsInformation';
+import NewsInformationDetail from './containers/NewsInformationDetail';
+import TeacherReport from './containers/TeacherReport';
+import TeacherReportDetail from './containers/TeacherReportDetail';
+import User from './containers/User';
+import Login from './containers/Login';
+import Center from './containers/Center';
+import Main from './subpages/Main';
+import NewsPage from './subpages/NewsPage';
+import AllVideosPage from './AllVideosPage';
+import Footer from './containers/Footer';
+import ProductGameMaster from './containers/ProductGameMaster';
+import ProductGameMasterList from './containers/ProductGameMasterList';
+import SpecialClassList from './AllVideosPage/containers/SpecialClassList';
+import DuanXianNeiCan from './containers/DuanXianNeiCan';
 
 import {InstructionPlan} from './InstranctionPlan';
 
@@ -39,6 +40,7 @@ const App = () => {
       <Route path="/VideosPage" component={AllVideosPage}/>
       <Route path="/SpecialClassList/:teacher" component={SpecialClassList}/>
       <Route path="/InstructionPlan" component={InstructionPlan}/>
+      <Route path="/duanxianneican/:product" component={DuanXianNeiCan}/>
       <Footer/>
     </div>
   )
