@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './components/Header'
 import LiveVideos from './containers/LiveVideos'
 import SpecialClass from './containers/SpecialClass'
 import * as lables from './const'
@@ -8,7 +7,7 @@ export default class VideosPage extends React.PureComponent{
   constructor(props){
     super(props)
     this.state={
-      tab:props.location.state||lables.JUN_YIN_ZHI_BO
+      tab:props.location.state||lables.JI_SHU_KE_CHENG
     }
     this.onHeadToggle = this.onHeadToggle.bind(this);
     this.onSubHeadToggle = this.onSubHeadToggle.bind(this);
@@ -68,7 +67,7 @@ export default class VideosPage extends React.PureComponent{
     let tabContentDom = this.createContentDom();
     return (
         <div className="VideosPage">
-          <Header tab={tab} onHeadToggle={this.onHeadToggle} />
+          {/*<Header tab={tab} onHeadToggle={this.onHeadToggle} />*/}
           <div className="tab_content">
             {tabContentDom}
           </div>

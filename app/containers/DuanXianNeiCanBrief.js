@@ -6,7 +6,7 @@ import * as actionTypes from '../actions/duan_xian_nei_can'
 
 function mapStateToProps(state) {
   return {
-    duan_xian_nei_can:state.duan_xian_nei_can,
+    state:state.duan_xian_nei_can,
   }
 }
 

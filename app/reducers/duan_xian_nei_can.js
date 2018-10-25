@@ -1,7 +1,7 @@
 import * as actionTypes from '../constants/duan_xian_nei_can';
 
 export const initialState = {
-
+  isFetching:false,
 }
 
 export default function duan_xian_nei_can(state = initialState,action){
@@ -13,8 +13,8 @@ export default function duan_xian_nei_can(state = initialState,action){
       }
     case actionTypes.RECEIVED:
       return {
-        data:state.data.concat(action.data),
-        receivedAt:action.receivedAt,
+        ...state,
+        ...action.data,
         isFetching:false,
       }
     case actionTypes.ERROR:

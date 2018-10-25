@@ -8,4 +8,5 @@ export const user_check='/ashx/User_Login.ashx'//用户登录
 export const user_record = '/ashx/user_Record.ashx'//用户发送模版消息记录
 export const Article_browse_Record= '/ashx/Article_browse_Record.ashx'//文章点击记录
 export const Video_browse_Record= '/ashx/Video_browse_Record.ashx'//视频点击观看记录
-export const duan_xian_nei_can = '/ashx/Video_browse_Record'
+export const duan_xian_nei_can = '/ashx/ShortAPI.ashx?Shortid='//短线金股
+
